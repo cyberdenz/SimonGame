@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/segment14" type="text/css" />
+  <link rel="stylesheet" href="simongame.css">
+  <title>Simon Game - Free Code Camp</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <audio preload="auto" id="sound1">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+    </audio>
+    <audio preload="auto" id="sound2">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+    </audio>
+    <audio preload="auto" id="sound3">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+    </audio>
+    <audio preload="auto" id="sound4">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+    </audio>
+    <audio preload="auto" id="sound5">
+      <source src="http://www.cyberdenz.16mb.com/buzzer.mp3" type="audio/mpeg">
+    </audio>
+    <div class="mainTitle">
+      Simon Game
+    </div>
+    <br>
+    <div class="gameboard">
+      <div class="top">
+        <div class="button1" onclick="key1()">
+        </div>
+        <div class="button2" onclick="key2()">
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="button3" onclick="key3()">
+        </div>
+        <div class="button4" onclick="key4()">
+        </div>
+      </div>
+      <div class="center">
+        <p class="mtitle">SIMON<sup class="trademark">®</sup></p>
+        <div class="controls">
+          <div class="display">
+            <p class="score">88</p>
+            <p class="scoreLabel">SCORE</p>
+          </div>
+          <div class="start">
+            <div class="startbutton" onclick="start()">
+            </div>
+            <p class="startLabel">START</p>
+          </div>
+          <div class="strict">
+            <div class="strictpilot">
+            </div>
+            <div class="strictbutton" onclick="strict()">
+            </div>
+            <p class="strictLabel">STRICT</p>
+          </div>
+          <span class="lbl">OFF</span>
+          <label class="switch">
+              <input type="checkbox" id="gamecheck" >
+              <span class="slider round"></span>
+          </label>
+          <span class="lbl">ON</span>
+
+        </div>
+        <!-- end of controls -->
+      </div>
+    </div>
+    <!-- end of gameboard -->
+
+  </div>
+  <!-- end of container -->
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="simongame.js">
+  </script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
